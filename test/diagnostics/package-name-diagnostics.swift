@@ -6,7 +6,6 @@
 // RUN: %target-swift-frontend -module-name Logging -package-name Swift %t/File.swift -emit-module -emit-module-path %t/Logging.swiftmodule | %FileCheck %s -check-prefix CHECK-STDLIB
 // CHECK-STDLIB: package name "Swift" is reserved for the standard library
 
-// CHECK-DUPE: package name "Logging" should be different from the module name
 
 // BEGIN File.swift
 public func log(level: Int) {}
