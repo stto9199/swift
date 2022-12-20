@@ -7,6 +7,5 @@
 // CHECK-STDLIB: package name "Swift" is reserved for the standard library
 
 
-// BEGIN File.swift
 public func log(level: Int) {}
 
