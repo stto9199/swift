@@ -275,7 +275,6 @@ bool ArgsToFrontendOptionsConverter::convert(
       Diags.diagnose(SourceLoc(), diag::error_bad_package_name, pkgName);
     else if (pkgName == STDLIB_NAME)
       Diags.diagnose(SourceLoc(), diag::error_stdlib_package_name, pkgName);
-      Diags.diagnose(SourceLoc(), diag::error_package_name_used_for_module, pkgName);
     else
       Opts.PackageName = pkgName;
   }
