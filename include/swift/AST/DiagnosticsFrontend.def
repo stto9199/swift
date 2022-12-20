@@ -186,7 +186,6 @@ ERROR(error_bad_package_name,none,
 ERROR(error_stdlib_package_name,none,
       "package name \"%0\" is reserved for the standard library",
       (StringRef))
-ERROR(error_package_name_used_for_module,none,
       "package name \"%0\" should be different from the module name",
       (StringRef))
 ERROR(error_stdlib_not_found,Fatal,
