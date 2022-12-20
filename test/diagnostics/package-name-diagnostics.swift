@@ -1,5 +1,4 @@
 // RUN: %empty-directory(%t)
-// RUN: %{python} %utils/split_file.py -o %t %s
 
 // RUN: %target-swift-frontend -module-name Logging -package-name My-Logging%Pkg %t/File.swift -emit-module -emit-module-path %t/Logging.swiftmodule | %FileCheck %s -check-prefix CHECK-BAD
 // CHECK-BAD: package name "My-Logging%Pkg" is not a valid identifier
